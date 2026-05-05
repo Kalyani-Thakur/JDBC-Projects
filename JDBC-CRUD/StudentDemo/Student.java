@@ -1,4 +1,4 @@
-package CURD;
+package StudentDemo;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -27,9 +27,10 @@ public class Student {
 
     public void createTable() {
         try {
+            
             String url = "jdbc:mysql://localhost:3306/CodingWallah";
-            String userName = "root";
-            String password = "a$,;24ai<PrMsQI";
+            String userName = "YourUsername";
+            String password = "YourPassword";
 
             Connection conn = DriverManager.getConnection(url, userName, password);
             Statement stm = conn.createStatement();
@@ -48,10 +49,11 @@ public class Student {
 
     public void createData() {
         try {
+            
             String url = "jdbc:mysql://localhost:3306/";
             String db = "codingwallah";
-            String userName = "root";
-            String password = "a$,;24ai<PrMsQI";
+            String userName = "YourUsername";
+            String password = "YourPassword";
 
             Connection conn = DriverManager.getConnection(url + db, userName, password);
 
@@ -77,10 +79,11 @@ public class Student {
 
     public void readData() {
         try {
+            
             String url = "jdbc:mysql://localhost:3306/";
             String db = "codingwallah";
-            String userName = "root";
-            String password = "a$,;24ai<PrMsQI";
+            String userName = "YourUsername";
+            String password = "YourPassword";
 
             Connection conn = DriverManager.getConnection(url + db, userName, password);
 
@@ -105,10 +108,11 @@ public class Student {
 
     public void updateData() {
         try {
+            
             String url = "jdbc:mysql://localhost:3306/";
             String db = "codingwallah";
-            String userName = "root";
-            String password = "a$,;24ai<PrMsQI";
+            String userName = "YourUsername";
+            String password = "YourPassword";
 
             Connection conn = DriverManager.getConnection(url + db, userName, password);
 
@@ -131,10 +135,10 @@ public class Student {
 
     public void deleteData() {
         try {
+            
             String url = "jdbc:mysql://localhost:3306/CodingWallah";
-
-            String userName = "root";
-            String password = "a$,;24ai<PrMsQI";
+            String userName = "YourUsername";
+            String password = "YourPassword";
 
             Connection conn = DriverManager.getConnection(url, userName, password);
             Statement stm = conn.createStatement();
@@ -154,8 +158,3 @@ public class Student {
     }
 }
 
-/*
-Statement stm = conn.createStatement();
-String query = "INSERT into student (sid, sname, semail) VALUES (20, 'shivam', 'shivam@gmail.com')";
-stm.execute(query);
-*/
