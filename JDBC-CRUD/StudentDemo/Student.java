@@ -9,9 +9,9 @@ public class Student {
     public void createDatabase() {
 
         try {
-            String url = "jdbc:mysql://localhost:3306/";
-            String userName = "root";
-            String password = "a$,;24ai<PrMsQI";
+             String url = "jdbc:mysql://localhost:3306/";
+            String userName = "YourUsername";
+            String password = "YourPassword";
 
             Connection conn = DriverManager.getConnection(url, userName, password); 
             Statement stm = conn.createStatement();
