@@ -66,34 +66,3 @@ public class Employee {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Constructor for DELETE
-// public Employee(int id) {
-//     this.idToDelete = id;
-// }
-
-// public int getIdToUpdate() {
-//     return updatedId;
-// }
-
-// public int getIdToDelete() {
-//     return idToDelete;
-// }
-
-// public String getUpdatedName() {
-//     return updatedName;
-// }
