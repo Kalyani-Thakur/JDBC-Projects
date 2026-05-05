@@ -10,8 +10,8 @@ public class DB {
         try {
             String url = "jdbc:mysql://localhost:3306/";
             String dbName = "EmployeeApp"; 
-            String userName = "root";
-            String password = "a$,;24ai<PrMsQI";  
+            String userName = "username";
+            String password = "password";  
 
             conn  = DriverManager.getConnection(url+dbName, userName, password);
         
