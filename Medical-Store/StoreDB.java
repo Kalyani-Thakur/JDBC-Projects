@@ -7,9 +7,9 @@ public class StoreDB {
     public static Connection connect() {
         try {
             String url = "jdbc:mysql://localhost:3306/";
-            String dbName = "Medical_Store"; // write it here your dbName
-            String userName = "root";
-            String password = "a$,;24ai<PrMsQI"; // write it here your sql password
+            String dbName = "Medical_Store"; 
+            String userName = "username";
+            String password = "yourpassword"; 
 
             conn = DriverManager.getConnection(url + dbName, userName, password);
 
